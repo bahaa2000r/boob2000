@@ -91,7 +91,7 @@ class SideMenuPanel extends StatelessWidget {
                       onTap: () => onSelect(item.id),
                       borderRadius: BorderRadius.circular(8),
                       child: Container(
-                        minHeight: 52,
+                       constraints: const BoxConstraints(minHeight: 52),
                         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
                         decoration: BoxDecoration(
                           color: isSelected ? AppColors.bgCard : Colors.transparent,
